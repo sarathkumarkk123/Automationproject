@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-06T16:21:47 IST" name="Suite" finished-at="2025-05-06T16:23:43 IST" duration-ms="115770">
+    <groups>
+    </groups>
+    <test started-at="2025-05-06T16:21:47 IST" name="Test" finished-at="2025-05-06T16:23:43 IST" duration-ms="115770">
+      <class name="testpackage.logintest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testpackage.logintest@682b2fa]" started-at="2025-05-06T16:21:47 IST" name="setup" finished-at="2025-05-06T16:22:14 IST" duration-ms="26684" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="datadriven()[pri:0, instance:testpackage.logintest@682b2fa]" started-at="2025-05-06T16:22:14 IST" name="datadriven" finished-at="2025-05-06T16:23:06 IST" duration-ms="51728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- datadriven -->
+      </class> <!-- testpackage.logintest -->
+      <class name="testpackage.producttocarttest">
+        <test-method signature="mthd()[pri:0, instance:testpackage.producttocarttest@6743e411]" started-at="2025-05-06T16:23:06 IST" name="mthd" finished-at="2025-05-06T16:23:24 IST" duration-ms="17943" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mthd -->
+      </class> <!-- testpackage.producttocarttest -->
+      <class name="testpackage.checkoutpaymenttest">
+        <test-method signature="paymentclick()[pri:0, instance:testpackage.checkoutpaymenttest@3eb25e1a]" started-at="2025-05-06T16:23:24 IST" name="paymentclick" finished-at="2025-05-06T16:23:43 IST" duration-ms="19262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paymentclick -->
+      </class> <!-- testpackage.checkoutpaymenttest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
