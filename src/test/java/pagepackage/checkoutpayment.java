@@ -14,7 +14,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class checkoutpayment {
+public class checkoutpayment 
+{
     WebDriver driver;
     WebDriverWait wait;
 
@@ -42,13 +43,15 @@ public class checkoutpayment {
     @FindBy(id = "place_order")
     WebElement placeorder;
 
-    public checkoutpayment(WebDriver driver2) {
+    public checkoutpayment(WebDriver driver2) 
+	{
         this.driver = driver2;
         PageFactory.initElements(driver, this);
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-    }
+        }
 
-    public void checkout_info(String firstname, String lastname, String address1, String billingcity1, String postcode1, String phone1, String email1) throws InterruptedException {
+    public void checkout_info(String firstname, String lastname, String address1, String billingcity1, String postcode1, String phone1, String email1) throws InterruptedException 
+	{
 
         wait.until(ExpectedConditions.visibilityOf(fname));
         fname.clear();
@@ -78,22 +81,25 @@ public class checkoutpayment {
         email.clear();
         email.sendKeys(email1);
 
-        // Scroll to the "Place Order" button
+        
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", placeorder);
 
-        // Wait until it's clickable
+        
         wait.until(ExpectedConditions.elementToBeClickable(placeorder));
 
-        try {
-            // Try normal click first
+        try 
+	{
+            
             placeorder.click();
-        } catch (org.openqa.selenium.ElementClickInterceptedException e) {
-            // If intercepted, try JS click
+        } 
+	catch (org.openqa.selenium.ElementClickInterceptedException e) 
+	{
+            
             ((JavascriptExecutor) driver).executeScript("arguments[0].click();", placeorder);
         }
 
-        Thread.sleep(15000);  // Reduce from 50s unless absolutely needed
-    }
+        Thread.sleep(15000);  
+        }
     public void screenshot1() throws Exception
 	{
 		File s=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
