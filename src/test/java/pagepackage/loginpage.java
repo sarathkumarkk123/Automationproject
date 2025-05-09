@@ -14,7 +14,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-public class loginpage {
+public class loginpage 
+{
 
 	
 		WebDriver driver;
@@ -65,8 +66,6 @@ public class loginpage {
 		{
 			 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		        wait.until(ExpectedConditions.elementToBeClickable(loginbtn));
-//		        Actions act=new Actions(driver);
-//		        act.moveToElement(loginbtn).perform();
 			loginbtn.click();
 		
 		}
@@ -79,4 +78,4 @@ public class loginpage {
 			System.out.println("Screenshot saved successfully");
 			
 		}
-	    }
+}
