@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import basepackage.Baseclass;
 import pagepackage.loginpage;
 import uitilities.exceluitilities;
-;
+
 
 public class logintest extends Baseclass
 {
