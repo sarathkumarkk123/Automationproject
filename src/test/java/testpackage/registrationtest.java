@@ -9,7 +9,7 @@ public class registrationtest
 {
 	public class RegisterTest extends Baseclass 
 	{
-@Test
+           @Test
 		public void set() throws Exception
 		{
 			registratin ob=new registratin (driver);
@@ -19,9 +19,5 @@ public class registrationtest
 			Thread.sleep(1000);
 			ob.clk();
 		}
-		
-		
-		
-
 	}
 }
